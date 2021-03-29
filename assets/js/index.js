@@ -49,3 +49,11 @@ const cat2 ={
 cat2.run();
 
 console.log(cat);
+
+delete cat.breed;
+
+cat.meow = function(){
+  console.log("MEOW!");
+}
+
+cat.age = 5;
