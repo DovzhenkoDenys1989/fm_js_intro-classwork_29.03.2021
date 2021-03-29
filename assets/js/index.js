@@ -1,19 +1,51 @@
 'use strict';
 
-for (let counter = 0; counter < 10; counter++){
-  console.log(counter);
+const object = {
+height: 100,
+width: '200px',
+display: true,
+testFun: function(num) {
+  console.log(num);
+},
+name:'John',
 }
+object.testFun(5);
 
 
 
-
-function factorial(num){
-  if(num < 0) return null;
-
-  let countedFactorial = BigInt(1);
-
-  for(let i = 2; i <= num; i++){
-    countedFactorial *= BigInt(i);
+const cat ={
+  name:'Murzik',
+  color:'black',
+  breed:'Sphinx',
+  isSleeping: true,
+  isMale: true,
+  run: function(){
+    console.log('i\'m running!!!');
+  },
+  voice:function(){
+    console.log('Мяу')
   }
-  return countedFactorial;
 }
+cat.run();
+
+cat.isSleeping = false;
+cat.color = 'white';
+
+
+
+const cat2 ={
+  name:'Nike',
+  color:'white',
+  breed:'persidskyi',
+  isSleeping: false,
+  isMale: true,
+  run: function(){
+    console.log('i\'m running!!!');
+  },
+  voice:function(){
+    console.log('Гав')
+  }
+}
+cat2.run();
+
+console.log(cat);
