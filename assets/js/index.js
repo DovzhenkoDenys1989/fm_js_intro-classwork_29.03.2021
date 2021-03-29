@@ -1,10 +1,19 @@
 'use strict';
 
-while (false){
-  console.log(1);
+for (let counter = 0; counter < 10; counter++){
+  console.log(counter);
 }
 
 
-do{
-  console.log(2);
-} while (false);
+
+
+function factorial(num){
+  if(num < 0) return null;
+
+  let countedFactorial = BigInt(1);
+
+  for(let i = 2; i <= num; i++){
+    countedFactorial *= BigInt(i);
+  }
+  return countedFactorial;
+}
